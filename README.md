@@ -5,7 +5,6 @@ node、Git、Chrome
 <h6>构建环境：</h6>
 webpack、npm、babel
 <h6># 编辑器：</h6>
-Atom
-ESlint
+Atom  vsc
 <h6>基础知识</h6>
 ES6 （ http://es6-features.org/#Constants ） 、 Sass、Vue

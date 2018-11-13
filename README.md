@@ -1,10 +1,21 @@
-# VueJDong
-Vue实战项目 中级
-<h6> 运行环境：</h6>
-node、Git、Chrome
-<h6>构建环境：</h6>
-webpack、npm、babel
-<h6># 编辑器：</h6>
-Atom  vsc
-<h6>基础知识</h6>
-ES6 （ http://es6-features.org/#Constants ） 、 Sass、Vue
+# jdongjingrou
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

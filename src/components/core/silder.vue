@@ -1,20 +1,25 @@
 <template>
     <section :class="cname">
         <swiper :options="swiperOption" :not-next-tick="swiperOption.notNextTick">
-            <swiper-slide v-for="(item,indexUrl )in items" :key="indexUrl">
-                <router-link to="{item.indexUrl}">
-                    <img :src="item.src" alt="">
+            <swiper-slide v-for="(item,index) in items" :key="index">
+                <router-link to="{item.index}">
+                    <img :src="item.src">
                 </router-link>
             </swiper-slide>
-            <div class="swiper-pagination" v-if="swiperOption.pagination"></div>
+            <div class="swiper-pagination" v-if="swiperOption.pagination" slot="pagination"></div>
         </swiper>
     </section>
 </template>
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 export default {
     props:{
+        cname:{
+            type:String,
+            default:''
+        },
         swiperOption:{
             type:Object,//对象默认是一个函数
             default(){
@@ -43,6 +48,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~swiper/dist/css/swiper.css';
 
 </style>

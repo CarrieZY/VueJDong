@@ -1,6 +1,6 @@
 <template>
    <section :class="[panelClass,cname]">
-       <p>-{{title}}-</p>
+       <h4>-{{title}}-</h4>
        <slot></slot>
    </section>
 </template>

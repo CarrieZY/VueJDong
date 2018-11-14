@@ -12,12 +12,13 @@
 }
 
 //parel样式  上下栏的样式
-@mixin parel($bgcolor:#fff,$padding:0,$margin:20px 0,$height:112px,$textpadding:0 32px,$fontsize:16px,$color:#333) {
+@mixin parel($bgcolor:#fff,$padding:0,$margin:20px 0,$height:3.5rem,$textpadding:0 32px,$fontsize:16px,$color:#333) {
     background-color: $bgcolor;
     padding:$padding;
     margin:$margin;
-    >p{
+    >h4{
         height:$height;
+        line-height: $height;
         color:$color;
         padding: $textpadding;
         text-overflow: ellipsis;
@@ -25,6 +26,18 @@
         overflow: hidden;
         text-align: center;
         font-size: $fontsize;
+        font-weight: 700;
     }
     
+}
+
+//flex布局
+@mixin flex($direction:column,$inline:block) {
+    display: if($inline==block,flex,inline-flex);
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin list($direction:column) {
+    @include flex($direction);
 }

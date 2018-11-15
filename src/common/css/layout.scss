@@ -41,3 +41,18 @@
 @mixin list($direction:column) {
     @include flex($direction);
 }
+
+//1px的边框线
+@mixin border-1px($color){
+    position: relative;
+    border:none;
+    &::after{
+        content:'';
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width:100%;
+        height:1px ;
+        background:$color;
+    }
+}

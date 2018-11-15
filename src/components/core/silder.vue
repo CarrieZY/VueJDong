@@ -1,8 +1,8 @@
 <template>
     <section :class="cname">
-        <swiper :options="swiperOption" :not-next-tick="swiperOption.notNextTick">
+        <swiper :swiperOption="swiperOption" :not-next-tick="swiperOption.notNextTick">
             <swiper-slide v-for="(item,index) in items" :key="index">
-                <router-link to="{item.index}">
+                <router-link :to="{name:item.index}" tag="a">
                     <img :src="item.src">
                 </router-link>
             </swiper-slide>
@@ -48,5 +48,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>

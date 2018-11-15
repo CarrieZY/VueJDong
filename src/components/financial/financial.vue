@@ -1,12 +1,12 @@
 <template>
     <div>
-        <m-header></m-header>
-        <home-slider></home-slider>
-        <novice/>
-        <rapid/>
+        <m-header/>
+        <fin-silder/>
+        <ada/>
         <choice/>
-        <product/>
-        <life/>
+        <adb/>
+        <money/>
+        <abc/>
         <m-footer/>
         <navbar/>
     </div>
@@ -14,23 +14,23 @@
 
 <script>
 import MHeader from '../public/header'
-import HomeSlider from './homeSilde'
-import novice from './novice'
-import rapid from './rapid'
+import finSilder from './finSilder'
+import ada from './ada'
 import choice from './choice'
-import product from './product'
-import life from './life'
+import adb from './adb'
+import money from './money'
+import abc from './abc'
 import MFooter from '../public/footer'
 import navbar from '../public/navbar'
 export default {
     components:{
         MHeader,
-        HomeSlider,
-        novice,
-        rapid,
+        finSilder,
+        ada,
         choice,
-        product,
-        life,
+        adb,
+        money,
+        abc,
         MFooter,
         navbar
     }

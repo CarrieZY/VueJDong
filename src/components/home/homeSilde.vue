@@ -88,7 +88,7 @@ export default {
     }
 }
 .silder{
-    margin-top:3.12rem;
+    margin-top:3.75rem;
     img{
         width:100%;
     }

@@ -1,21 +1,21 @@
-<template>
+<template lang="html">
     <Panel title="新品推荐" :class="$style.panel">
         <section :class="$style.content">
             <div class="arrow">更多尖货 ></div>
-            <Slider :options="options" :items="items" cname="product-slider"/>
+            <silder :swiperOption="swiperOption" cname="product-slider" :items="items"/>
         </section>
     </Panel>
 </template>
 
 <script>
-import parel from '../core/parel'
-import Slider from "../core/silder"
+import Panel from "../core/parel"
+import silder from '../core/silder'
 export default {
-    components:{
-        parel,
-        Slider
+    components: {
+        Panel,
+        silder
     },
-    data(){
+    data() {
         return {
             items:[{
                 index: "home",
@@ -30,33 +30,30 @@ export default {
                 index: "home",
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t15784/188/381232069/39444/8878571d/5a2f6a4aNbd5a574c.jpg?width=335&height=421",
             }],
-            swiperOption: {
-                pagination: {
-                     el: '.swiper-pagination',
-                     clickable:true
-                    },
-                slidesPerView: 3,
+            swiperOption:{
+                slidesPerView: 3,   
                 spaceBetween: 30,
-                freeMode: true,
-            } 
+                freeMode: true
+            }
         }
-    }
+    },
 }
 </script>
 
 <style lang="scss">
-  .product-silder{
+  .product-slider{
     .swiper-container{
       box-sizing: border-box;
-      padding: 0 0.75rem;
-      .swiper-silder{
+      padding: 0 1.25rem;
+      .swiper-slide{
+        width:7.8125rem !important;
         a{
+          width:100%;
           display: inline-block;
-          width: 100%;
-          img{
-            width: 100%;
-            display: block;
-            height: 9.8rem;
+          img{ 
+            width:100%;  
+            display: inline-block;
+            height: 9.28rem;
             border: 1px solid #fafafa;
           }
         }
@@ -66,19 +63,19 @@ export default {
 </style>
 
 <style lang="scss" module>
-@import '../../common/css/layout';
-.parel{
+  @import "../../common/css/layout.scss";
+  .panel{
     @include parel;
     .content{
-      padding-bottom: 1.25rem;
+      padding-bottom: 40px;
       position: relative;
       &>div{
         position: absolute;
-        font-size:0.875rem;
+        font-size: 0.875rem;
         color: #999;
         right:0.625rem;
         top: -2.18rem;
       }
     }
-}
+  }
 </style>

@@ -2,7 +2,7 @@
     <Panel title="新品推荐" :class="$style.panel">
         <section :class="$style.content">
             <div class="arrow">更多尖货 ></div>
-            <silder :swiperOption="swiperOption" cname="product-slider" :items="items"/>
+            <silder :options="swiperOption" cname="product-slider" :items="items"/>
         </section>
     </Panel>
 </template>

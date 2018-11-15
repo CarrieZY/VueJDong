@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import '../common/css/reset.scss'
 import home from '../components/home/home'
 import financial from '../components/financial/financial'
+import ious from '../components/ious/ious'
 
 Vue.use(Router)
 
@@ -19,6 +20,10 @@ export default new Router({
     {
       path:"/financial",
       component:financial
+    },
+    {
+      path:'/ious',
+      component:ious
     }
   ]
 })

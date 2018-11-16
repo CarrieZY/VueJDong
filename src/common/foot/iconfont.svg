@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="gengduo" unicode="&#58944;" d="M190.993015 380.929373m-67.192549 0a67.192549 67.192549 0 1 1 134.385098 0 67.192549 67.192549 0 1 1-134.385098 0ZM508.893248 380.929373m-67.192549 0a67.192549 67.192549 0 1 1 134.385098 0 67.192549 67.192549 0 1 1-134.385098 0ZM826.793481 380.929373m-67.19255 0a67.192549 67.192549 0 1 1 134.385099 0 67.192549 67.192549 0 1 1-134.385099 0Z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="back" unicode="&#58890;" d="M669.6 46.4c8.8-8 22.4-7.2 30.4 1.6s7.2 22.4-1.6 30.4l-309.6 280c-8 7.2-8 17.6 0 24.8l309.6 270.4c8.8 8 9.6 21.6 2.4 30.4-8 8.8-21.6 9.6-30.4 2.4l-309.6-271.2c-27.2-24-28-64-0.8-88.8l309.6-280z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

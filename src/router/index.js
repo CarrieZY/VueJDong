@@ -4,6 +4,7 @@ import '../common/css/reset.scss'
 import home from '../components/home/home'
 import financial from '../components/financial/financial'
 import ious from '../components/ious/ious'
+import raise from '../components/raise/raise'
 
 Vue.use(Router)
 
@@ -24,6 +25,10 @@ export default new Router({
     {
       path:'/ious',
       component:ious
+    },
+    {
+      path:'/raise',
+      component:raise
     }
   ]
 })

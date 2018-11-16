@@ -12,7 +12,7 @@
         <img src="//img12.360buyimg.com/jrpmobile/jfs/t3343/179/621044750/1484/5af6b11a/580f50e4N005181d0.png?width=66&height=66" alt="">
         <p>白条</p>
         </router-link>
-        <router-link to="/home" tag="a">
+        <router-link to="/raise" tag="a">
         <img src="//img12.360buyimg.com/jrpmobile/jfs/t3604/98/635506544/2317/443d3a51/580f240aNbee3dcc4.png?width=66&height=66" alt="">
         <p>众筹</p>
         </router-link>
@@ -45,6 +45,9 @@ export default {
     >a {
         display: inline-block;
         text-decoration: none;
+        &.router-link-active>p{
+            color:red;
+        }
         img{
           width: 1.375rem;
           height: 1.375rem;

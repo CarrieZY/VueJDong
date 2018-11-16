@@ -2,7 +2,7 @@
     <Panel title="新品推荐" :class="$style.panel">
         <section :class="$style.content">
             <div class="arrow">更多尖货 ></div>
-            <silder :options="swiperOption" cname="product-slider" :items="items"/>
+            <silder :items="items" cname="product-slider" />
         </section>
     </Panel>
 </template>
@@ -18,20 +18,20 @@ export default {
     data() {
         return {
             items:[{
-                index: "home",
+                index:'/home',
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t13963/267/2355123229/48850/254f797a/5a3c59aeN9cb550f6.jpg?width=335&height=421",
             }, {
-                index: "home",
+                index:'/home',
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t13021/306/1996997425/21953/bda69db3/5a2f6a17N9da099b1.jpg?width=335&height=421",
             }, {
-                index: "home",
+                index:'/home',
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t14125/310/1997192193/46667/3c910f8b/5a2f6a36Nad95b650.jpg?width=335&height=421",
             }, {
-                index: "home",
+                index:'/home',
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t15784/188/381232069/39444/8878571d/5a2f6a4aNbd5a574c.jpg?width=335&height=421",
             }],
-            swiperOption:{
-                slidesPerView: 3,   
+            swiperOption: {
+                slidesPerView: 3,
                 spaceBetween: 30,
                 freeMode: true
             }
@@ -42,11 +42,10 @@ export default {
 
 <style lang="scss">
   .product-slider{
-    .swiper-container{
+    .swiper-container{  
       box-sizing: border-box;
       padding: 0 1.25rem;
       .swiper-slide{
-        width:7.8125rem !important;
         a{
           width:100%;
           display: inline-block;
@@ -59,6 +58,9 @@ export default {
         }
       }
     }
+    .swiper-pagination {
+        display: none;
+    }
   }
 </style>
 
@@ -67,7 +69,7 @@ export default {
   .panel{
     @include parel;
     .content{
-      padding-bottom: 40px;
+      padding-bottom: 1.25rem;
       position: relative;
       &>div{
         position: absolute;

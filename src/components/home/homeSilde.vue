@@ -3,7 +3,7 @@
         <silder :items="items" :cname="$style.silder"></silder>
         <div :class="$style.list">
             <div :class="$style.item" v-for="(item,index) in enters" :key="index">
-                <router-link :to="{name:item.href}" tag="a">
+                <router-link to="/home" tag="a">
                 <img :src="item.img" :alt="item.title">
                 <p>{{item.title}}</p>
                 </router-link>
